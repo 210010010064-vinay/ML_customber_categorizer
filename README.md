@@ -36,25 +36,23 @@ Before you run this project make sure you have MongoDB Atlas account and you hav
 
 Step 1. Create a conda environment.
 
-```
+
 
 conda create --prefix venv python=3.7 -y
 
-```
 
-```
 
 conda activate venv/
 
-```
+
 
 Step 3. Install the requirements
 
-```
+
 
 pip install -r requirements.txt
 
-```
+
 
 
 
@@ -68,16 +66,11 @@ python app.py
 
 Step 6. Train application
 
-```
+```bash
 
 http://localhost:5000/train
 
 ```
-
-
-
-
-
 
 
 ## Models Used
@@ -89,7 +82,7 @@ From these above models after hyperparameter optimization we selected these two 
 
 * GridSearchCV is used for Hyperparameter Optimization in the pipeline.
 
-## 'src' is the main package folder which contains
+## `src` is the main package folder which contains
 
 **Components** : Contains all components of Machine Learning Project
 
