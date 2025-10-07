@@ -68,39 +68,28 @@ python app.py
 
 Step 6. Train application
 
-```bash
+```
 
 http://localhost:5000/train
 
 ```
 
-Step 7. Prediction application
-
-```bash
-
-http://localhost:5000/predict
 
 
 
-## Project Architecture -
 
-![WhatsApp Image 2022-09-22 at 15 29 19](https://user-images.githubusercontent.com/71321529/192722336-54016f79-89ef-4c8c-9d71-a6e91ebab03f.jpeg)
-
-## Data Collection Architecture -
-
-![WhatsApp Image 2022-09-22 at 15 29 10](https://user-images.githubusercontent.com/71321529/192721926-de265f9b-f301-4943-ac7d-948bff7be9a0.jpeg)
 
 
 ## Models Used
 
-* [K-Means](https://www.javatpoint.com/k-means-clustering-algorithm-in-machine-learning)
-* [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+* [K-Means]
+* [LogisticRegression]
 
 From these above models after hyperparameter optimization we selected these two models which were K-Means for clustering and Logistic Regression for classification and used the following in Pipeline.
 
 * GridSearchCV is used for Hyperparameter Optimization in the pipeline.
 
-## `src` is the main package folder which contains
+## 'src' is the main package folder which contains
 
 **Components** : Contains all components of Machine Learning Project
 
