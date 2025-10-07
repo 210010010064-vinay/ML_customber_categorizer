@@ -21,3 +21,4 @@ python-multipart
 neuro_mf
 cython
 gunicorn
+pyyaml==6.0.1
