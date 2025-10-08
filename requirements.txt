@@ -4,7 +4,9 @@ PyYAML==5.4.1
 cython>=0.29.30,<1.0
 dill==0.3.5.1
 dnspython==2.2.1
+numpy<2.0
 evidently==0.1.58.dev0
+gunicorn
 fastapi==0.78.0
 from-root==1.0.2
 httptools==0.5.0
@@ -22,4 +24,4 @@ wincertstore==0.2
 xgboost==1.6.2
 python-multipart==0.0.5
 neuro_mf
-gunicorn
+
