@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from datetime import datetime
 
 TIMESTAMP: str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
-
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @dataclass
 class TrainingPipelineConfig:
@@ -72,15 +72,14 @@ class ModelTrainerConfig:
 @dataclass
 class ModelEvaluationConfig:
     changed_threshold_score: float = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
-    model_file_path: str = MODEL_FILE_NAME
-    best_model_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\model.pkl"
+    model_file_path: str = os.path.join(ROOT_DIR, 'models', 'model.pkl')
+    best_model_path: str = os.path.join(ROOT_DIR, 'models', 'best_model.pkl')
 
 
 @dataclass
 class ModelPusherConfig:
-    model_pusher_dir: str = r"C:\Users\Student\Desktop\Customber_Categorizer\models"
-    pushed_model_file: str = "model.pkl"
-
+    model_pusher_dir: str = os.path.join(ROOT_DIR, 'models')
+    pushed_model_file: str = 'model.pkl'
 
 
 
@@ -89,10 +88,10 @@ class ModelPusherConfig:
 
 @dataclass
 class PredictionPipelineConfig:
-    data_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\customer_pred_data.csv"
-    model_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\models\model.pkl"
-    output_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\customer_predictions.csv"
-    local_model_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\models\model.pkl"
+    data_file_path: str = os.path.join(ROOT_DIR, 'customer_pred_data.csv')
+    model_file_path: str = os.path.join(ROOT_DIR, 'models', 'model.pkl')
+    output_file_path: str = os.path.join(ROOT_DIR, 'customer_predictions.csv')
+    local_model_path: str = os.path.join(ROOT_DIR, 'models', 'model.pkl')
     
 
 
