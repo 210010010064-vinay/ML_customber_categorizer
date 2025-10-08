@@ -90,10 +90,10 @@ class ModelPusherConfig:
 @dataclass
 class PredictionPipelineConfig:
     data_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\customer_pred_data.csv"
-    model_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\model.pkl"
+    model_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\models\model.pkl"
     output_file_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\customer_predictions.csv"
-    local_model_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\model.pkl"
-
+    local_model_path: str = r"C:\Users\Student\Desktop\Customber_Categorizer\models\model.pkl"
+    
 
 
 
