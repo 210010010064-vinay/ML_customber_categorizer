@@ -78,7 +78,7 @@ class ModelEvaluationConfig:
 
 @dataclass
 class ModelPusherConfig:
-    model_pusher_dir: str = r"C:\Users\Student\Desktop\Customber_Categorizer"
+    model_pusher_dir: str = r"C:\Users\Student\Desktop\Customber_Categorizer\models"
     pushed_model_file: str = "model.pkl"
 
 
@@ -132,4 +132,3 @@ class Prediction_config:
     
 
 
-        return self.__dict__

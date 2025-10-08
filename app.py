@@ -142,14 +142,7 @@ async def predictRouteClient(request: Request):
         prediction_pipeline = PredictionPipeline()
         predicted_cluster = prediction_pipeline.run_pipeline(input_data=input_data)
        
-        
-        # model_predictor = Customer_segmentation_Classifier()
-
-        # predicted_cluster = model_predictor.predict(customer_data_df)
-        return templates.TemplateResponse(
-            "customer.html",
-            {"request": request, "context": int(predicted_cluster[0])}
-        )
+        return templates.TemplateResponse("customer.html",{"request": request, "context": int(predicted_cluster[0])})
 
     except Exception as e:
         return {"status": False, "error": f"{e}"}

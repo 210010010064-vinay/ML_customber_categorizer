@@ -72,7 +72,7 @@ class PredictionPipeline:
         
     
         
-    def get_trained_model(self, ModelTrainerConfig = ModelTrainerConfig):
+    def get_trained_model(self,ModelTrainerConfig = ModelTrainerConfig):
         try:
             prediction_config = PredictionPipelineConfig()
             model = CustomerClusterEstimatorLocal(model_path=prediction_config.local_model_path )  
@@ -80,11 +80,6 @@ class PredictionPipeline:
         except Exception as e:
             raise CustomerException(e, sys) from e
 
-                    
-            return model
-                    
-        except Exception as e:
-            raise CustomerException(e, sys) from e
             
     def run_pipeline(self, input_data:list):
         
