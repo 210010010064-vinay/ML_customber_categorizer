@@ -25,54 +25,6 @@ Dataset used
 
 
 
-## How to run
-
-Before you run this project make sure you have MongoDB Atlas account and you have the shipping dataset into it.
-
-
-
-
-
-
-Step 1. Create a conda environment.
-
-
-
-conda create --prefix venv python=3.7 -y
-
-
-
-conda activate venv/
-
-
-
-Step 3. Install the requirements
-
-
-
-pip install -r requirements.txt
-
-
-
-
-
-Step 5. Run the application server
-
-
-
-python app.py
-
-
-
-Step 6. Train application
-
-```bash
-
-http://localhost:5000/train
-
-```
-
-
 ## Models Used
 
 * [K-Means]
@@ -92,7 +44,7 @@ From these above models after hyperparameter optimization we selected these two 
 - Data Clustering
 - Model Trainer
 - Model Evaluation
-- Model Pusher
+
 
 **Custom Logger and Exceptions** are used in the Project for better debugging purposes.
 
