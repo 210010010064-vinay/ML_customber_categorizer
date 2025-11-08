@@ -55,16 +55,7 @@ class DataIngestion:
     
         
     def export_data_into_feature_store(self)->DataFrame:
-        """
-        Method Name :   export_data_into_feature_store
-        Description :   This method reads data from mongodb and saves it into artifacts. 
-        
-        Output      :   dataset is returned as a DataFrame
-        On Failure  :   Write an exception log and then raise an exception
-        
-        Version     :   0.1
        
-        """
         try:
             logging.info(f"Exporting data from mongodb")
             customer_data = CustomerData()
